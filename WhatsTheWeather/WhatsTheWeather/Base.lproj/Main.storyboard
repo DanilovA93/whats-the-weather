@@ -15,20 +15,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blur2" translatesAutoresizingMaskIntoConstraints="NO" id="tL3-Lb-72t">
+                                <rect key="frame" x="-753" y="-147" width="1920" height="1200"/>
+                            </imageView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Rc4-Xb-xtG">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="r69-4f-TIu">
-                                <rect key="frame" x="8" y="200" width="398" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="8" y="175" width="398" height="60"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-CondensedBold" family="American Typewriter" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wg-ap-MSa">
-                                <rect key="frame" x="74" y="360" width="266.5" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wg-ap-MSa">
+                                <rect key="frame" x="50" y="310" width="314" height="58"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Temperature">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="50" name="AmericanTypewriter-Semibold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -37,12 +46,14 @@
                             <constraint firstItem="6wg-ap-MSa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="32k-qZ-e7i"/>
                             <constraint firstItem="Rc4-Xb-xtG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4WR-Nk-Z7e"/>
                             <constraint firstItem="Rc4-Xb-xtG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5Fj-8U-aa9"/>
+                            <constraint firstItem="tL3-Lb-72t" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="DsU-Vj-IgB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r69-4f-TIu" secondAttribute="trailing" constant="8" id="SAB-4S-zeW"/>
-                            <constraint firstItem="6wg-ap-MSa" firstAttribute="top" secondItem="r69-4f-TIu" secondAttribute="bottom" constant="100" id="T8m-0P-Jf0"/>
-                            <constraint firstItem="r69-4f-TIu" firstAttribute="top" secondItem="Rc4-Xb-xtG" secondAttribute="bottom" constant="100" id="TWq-fu-rGZ"/>
+                            <constraint firstItem="6wg-ap-MSa" firstAttribute="top" secondItem="r69-4f-TIu" secondAttribute="bottom" constant="75" id="T8m-0P-Jf0"/>
+                            <constraint firstItem="r69-4f-TIu" firstAttribute="top" secondItem="Rc4-Xb-xtG" secondAttribute="bottom" constant="75" id="TWq-fu-rGZ"/>
                             <constraint firstItem="r69-4f-TIu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Uzs-6q-zKB"/>
                             <constraint firstItem="r69-4f-TIu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XUk-LW-N1R"/>
                             <constraint firstItem="Rc4-Xb-xtG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="n4c-GZ-C6u"/>
+                            <constraint firstItem="tL3-Lb-72t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="n9B-nt-jca"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -54,7 +65,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="110"/>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blur2" width="1920" height="1200"/>
+    </resources>
 </document>

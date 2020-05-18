@@ -26,9 +26,9 @@ extension ViewController: UISearchBarDelegate {
         searchBar.resignFirstResponder()
         
         let key = "61fc680cb989727b2f8c5a82ab572c6f"
-        var city = searchBar.text!.replacingOccurrences(of: " ", with: "%20")
-        var urlString = "http://api.weatherstack.com/current?access_key=\(key)&query=\(city)"
-        var url = URL(string: urlString)
+        let city = searchBar.text!.replacingOccurrences(of: " ", with: "%20")
+        let urlString = "http://api.weatherstack.com/current?access_key=\(key)&query=\(city)"
+        let url = URL(string: urlString)
         
         var locationName: String?
         var tempetature: Double?
